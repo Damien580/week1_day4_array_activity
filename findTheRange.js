@@ -20,3 +20,6 @@ let currentValue = array[i]
    }
 }
 console.log(`in the array ${array}, the highest value is ${max}, and the lowest value is ${min}`)
+
+let range = max - min
+console.log(`The range of the array is ${range}`)
