@@ -2,13 +2,21 @@
 let array = [28, 43, -12, 30, 4, 0, -36]
 
 // Write your solution below:
-array.sort( function(a , b){ //This function sorts the array. the array.sort() operation will also
-    if (a > b) return 1;     //use 
-    if (a < b) return -1;
-    return 0;
-});
-array.filter((num) => {
-    return num >= -36 && num <= 43
-})
+let min = [0]
+let max = [0]
 
-console.log(array.filter)
+for(let i = 0; i < array.length; i++){
+    console.log(array[i])
+let currentValue = array[i]
+   if (currentValue < min){
+    min = currentValue
+    console.log(`The current value ${currentValue} is lower that our current ${min}`)
+    
+   }
+   if (currentValue > max){
+       max = currentValue
+       console.log(`the current value ${currentValue} is higher than our current maximum ${max}`)
+       
+   }
+}
+console.log(`in the array ${array}, the highest value is ${max}, and the lowest value is ${min}`)
